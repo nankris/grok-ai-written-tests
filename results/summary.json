@@ -1,64 +1,64 @@
 {
-  "n_runs": 19,
+  "n_runs": 20,
   "reps": [
     1
   ],
   "n_tasks_in_repo": 10,
   "conditions": {
     "tests-first": {
-      "n": 9,
-      "n_full_pass": 7,
-      "full_pass_rate": 0.7777777777777778,
+      "n": 10,
+      "n_full_pass": 8,
+      "full_pass_rate": 0.8,
       "full_pass_wilson95": {
-        "low": 0.45258896910698887,
-        "high": 0.9367748928821533
+        "low": 0.49016247153664183,
+        "high": 0.9433178485456247
       },
       "fraction": {
-        "n": 9,
-        "mean": 0.7777777777777778,
-        "low": 0.4444444444444444,
+        "n": 10,
+        "mean": 0.8,
+        "low": 0.5,
         "high": 1.0,
         "reps": 10000,
         "seed": 0
       },
       "median_fraction": 1.0,
       "wall_seconds": {
-        "n": 9,
-        "median": 600.2900187640043,
-        "mean": 473.74174197777836
+        "n": 10,
+        "median": 573.6348243745015,
+        "mean": 480.1171838064009
       },
       "tokens": {
-        "n": 4,
-        "median_total": 318996.0,
-        "sum_total": 1307007.0,
-        "median_input": 58475.0,
-        "median_output": 24640.5,
-        "median_reasoning": 17951.0,
-        "median_cache_read": 235712.0,
-        "sum_cache_read": 974208.0,
-        "sum_input": 229956.0,
-        "sum_output": 102843.0,
-        "sum_reasoning": 81670.0
+        "n": 5,
+        "median_total": 355886.0,
+        "sum_total": 1662893.0,
+        "median_input": 62824.0,
+        "median_output": 26312.0,
+        "median_reasoning": 21632.0,
+        "median_cache_read": 242176.0,
+        "sum_cache_read": 1216384.0,
+        "sum_input": 302407.0,
+        "sum_output": 144102.0,
+        "sum_reasoning": 116780.0
       },
       "turns": {
-        "n": 4,
-        "median": 9.0,
-        "mean": 9.0
+        "n": 5,
+        "median": 7.0,
+        "mean": 8.6
       },
       "cost_usd": {
-        "n": 4,
-        "median": 0.13276626000000002,
-        "sum": 0.53178516,
-        "mean": 0.13294629
+        "n": 5,
+        "median": 0.13901988,
+        "sum": 0.70639012,
+        "mean": 0.141278024
       },
       "n_timed_out": 5,
       "n_process_error": 0,
       "n_peeked": 0,
       "n_solution_mentions_repo": 0,
-      "n_wrote_test_file": 8,
-      "n_ran_checks": 4,
+      "n_wrote_test_file": 9,
+      "n_ran_checks": 5,
       "n_missing_session_scan": 5,
-      "n_retried": 4
+      "n_retried": 5
     },
     "code-only": {
       "n": 10,
@@ -117,7 +117,7 @@
     }
   },
   "paired": {
-    "n_pairs": 9,
+    "n_pairs": 10,
     "pairs": [
       {
         "task_id": "csvline",
@@ -168,6 +168,14 @@
         "code_only_full": true
       },
       {
+        "task_id": "rle",
+        "rep": 1,
+        "tests_first_fraction": 1.0,
+        "code_only_fraction": 1.0,
+        "tests_first_full": true,
+        "code_only_full": true
+      },
+      {
         "task_id": "roman",
         "rep": 1,
         "tests_first_fraction": 1.0,
@@ -193,30 +201,30 @@
       }
     ],
     "fraction_diff_tests_minus_code": {
-      "n": 9,
-      "mean": -0.1111111111111111,
-      "low": -0.3333333333333333,
+      "n": 10,
+      "mean": -0.1,
+      "low": -0.3,
       "high": 0.0,
       "reps": 10000,
       "seed": 0
     },
     "full_pass_counts": {
-      "both": 7,
+      "both": 8,
       "tests_first_only": 0,
       "code_only_only": 1,
       "neither": 1
     }
   },
   "ai_tests": {
-    "n_runs": 9,
-    "n_with_test_file": 8,
-    "sum_ast_test_count": 216,
-    "sum_collected": 920,
-    "sum_passed_on_reference": 912,
+    "n_runs": 10,
+    "n_with_test_file": 9,
+    "sum_ast_test_count": 236,
+    "sum_collected": 1173,
+    "sum_passed_on_reference": 1165,
     "sum_failed_on_reference": 8,
     "sum_errors_on_reference": 0,
     "sum_false_failing": 8,
-    "false_failing_rate_among_collected": 0.008695652173913044,
+    "false_failing_rate_among_collected": 0.0068201193520886615,
     "per_run": [
       {
         "task_id": "intervals",
@@ -341,6 +349,20 @@
         "errors_on_reference": 0,
         "false_failing": 0,
         "ran": false
+      },
+      {
+        "task_id": "rle",
+        "rep": 1,
+        "test_files": [
+          "test_solution.py"
+        ],
+        "ast_test_count": 20,
+        "collected": 253,
+        "passed_on_reference": 253,
+        "failed_on_reference": 0,
+        "errors_on_reference": 0,
+        "false_failing": 0,
+        "ran": true
       }
     ]
   },
@@ -778,6 +800,29 @@
       "timed_out": false,
       "peeked_outside": false,
       "wrote_test_file": false,
+      "ran_checks": true,
+      "n_attempts": 2,
+      "process_error": null
+    },
+    {
+      "task_id": "rle",
+      "condition": "tests-first",
+      "rep": 1,
+      "fraction": 1.0,
+      "full_pass": true,
+      "n_passed": 22,
+      "n_expected": 22,
+      "wall_seconds": 537.4961602640033,
+      "num_turns": 7,
+      "total_tokens": 355886,
+      "input_tokens": 72451,
+      "cache_read_input_tokens": 242176,
+      "output_tokens": 41259,
+      "reasoning_tokens": 35110,
+      "cost_usd_all_attempts": 0.17460496,
+      "timed_out": false,
+      "peeked_outside": false,
+      "wrote_test_file": true,
       "ran_checks": true,
       "n_attempts": 2,
       "process_error": null

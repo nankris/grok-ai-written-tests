@@ -1,0 +1,58 @@
+2026-10-10T16:30:29Z queued 16 jobs, skipping 4 already scored, parallel=2
+2026-10-10T16:30:29Z start code-only__lru_ttl__r1 attempt 1
+2026-10-10T16:30:29Z start tests-first__lru_ttl__r1 attempt 1
+2026-10-10T16:48:55Z done tests-first__lru_ttl__r1 attempt 1 wall=600.3747739059982 rc=143 timeout=True fraction=None retry=True
+2026-10-10T16:48:55Z retry tests-first__lru_ttl__r1: process failed and lru_ttl.py is missing
+2026-10-10T16:48:55Z done code-only__lru_ttl__r1 attempt 1 wall=600.382266235003 rc=143 timeout=True fraction=None retry=True
+2026-10-10T16:48:55Z retry code-only__lru_ttl__r1: process failed and lru_ttl.py is missing
+2026-10-10T16:48:55Z start tests-first__lru_ttl__r1 attempt 2
+2026-10-10T16:48:55Z start code-only__lru_ttl__r1 attempt 2
+2026-10-10T16:58:56Z done code-only__lru_ttl__r1 attempt 2 wall=600.3312969649996 rc=143 timeout=True fraction=1.0 retry=False
+2026-10-10T16:58:56Z start tests-first__csvline__r1 attempt 1
+2026-10-10T16:58:56Z done tests-first__lru_ttl__r1 attempt 2 wall=600.3218320090018 rc=143 timeout=True fraction=0.0 retry=False
+2026-10-10T16:58:56Z start code-only__csvline__r1 attempt 1
+2026-10-10T16:59:55Z done code-only__csvline__r1 attempt 1 wall=58.66529044799972 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T16:59:55Z start code-only__semver__r1 attempt 1
+2026-10-10T17:07:14Z done code-only__semver__r1 attempt 1 wall=438.8900717360011 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:07:14Z start tests-first__semver__r1 attempt 1
+2026-10-10T17:08:56Z done tests-first__csvline__r1 attempt 1 wall=600.4561130410002 rc=143 timeout=True fraction=None retry=True
+2026-10-10T17:08:56Z retry tests-first__csvline__r1: process failed and csvline.py is missing
+2026-10-10T17:08:56Z start tests-first__csvline__r1 attempt 2
+2026-10-10T17:17:15Z done tests-first__semver__r1 attempt 1 wall=600.303517376 rc=143 timeout=True fraction=1.0 retry=False
+2026-10-10T17:17:15Z start tests-first__ratelimit__r1 attempt 1
+2026-10-10T17:18:57Z done tests-first__csvline__r1 attempt 2 wall=600.297621194004 rc=143 timeout=True fraction=1.0 retry=False
+2026-10-10T17:18:57Z start code-only__ratelimit__r1 attempt 1
+2026-10-10T17:26:39Z done code-only__ratelimit__r1 attempt 1 wall=461.6530694139947 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:26:39Z start code-only__wordwrap__r1 attempt 1
+2026-10-10T17:27:16Z done tests-first__ratelimit__r1 attempt 1 wall=600.4721900270015 rc=143 timeout=True fraction=None retry=True
+2026-10-10T17:27:16Z retry tests-first__ratelimit__r1: process failed and ratelimit.py is missing
+2026-10-10T17:27:16Z start tests-first__ratelimit__r1 attempt 2
+2026-10-10T17:29:25Z done code-only__wordwrap__r1 attempt 1 wall=166.4092617849965 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:29:25Z start tests-first__wordwrap__r1 attempt 1
+2026-10-10T17:36:23Z done tests-first__ratelimit__r1 attempt 2 wall=546.9796299849986 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:36:23Z start tests-first__daterange__r1 attempt 1
+2026-10-10T17:39:26Z done tests-first__wordwrap__r1 attempt 1 wall=600.3047641049998 rc=143 timeout=True fraction=1.0 retry=False
+2026-10-10T17:39:26Z start code-only__daterange__r1 attempt 1
+2026-10-10T17:40:33Z done tests-first__daterange__r1 attempt 1 wall=249.56762621500093 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:40:33Z start code-only__jsonpath__r1 attempt 1
+2026-10-10T17:41:14Z done code-only__daterange__r1 attempt 1 wall=107.10875161299919 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T17:41:14Z start tests-first__jsonpath__r1 attempt 1
+2026-10-10T17:50:34Z done code-only__jsonpath__r1 attempt 1 wall=600.4954212499943 rc=143 timeout=True fraction=None retry=True
+2026-10-10T17:50:34Z retry code-only__jsonpath__r1: process failed and jsonpath.py is missing
+2026-10-10T17:50:34Z start code-only__jsonpath__r1 attempt 2
+2026-10-10T17:51:14Z done tests-first__jsonpath__r1 attempt 1 wall=600.3025046740004 rc=143 timeout=True fraction=None retry=True
+2026-10-10T17:51:14Z retry tests-first__jsonpath__r1: process failed and jsonpath.py is missing
+2026-10-10T17:51:14Z start tests-first__jsonpath__r1 attempt 2
+2026-10-10T18:00:34Z done code-only__jsonpath__r1 attempt 2 wall=600.3057441619967 rc=143 timeout=True fraction=0.0 retry=False
+2026-10-10T18:00:34Z start tests-first__rle__r1 attempt 1
+2026-10-10T18:01:14Z done tests-first__jsonpath__r1 attempt 2 wall=600.2900187640043 rc=143 timeout=True fraction=0.0 retry=False
+2026-10-10T18:01:14Z start code-only__rle__r1 attempt 1
+2026-10-10T18:10:35Z done tests-first__rle__r1 attempt 1 wall=600.3488552920026 rc=143 timeout=True fraction=None retry=True
+2026-10-10T18:10:35Z retry tests-first__rle__r1: process failed and rle.py is missing
+2026-10-10T18:10:35Z start tests-first__rle__r1 attempt 2
+2026-10-10T18:11:15Z done code-only__rle__r1 attempt 1 wall=600.2704439579975 rc=143 timeout=True fraction=None retry=True
+2026-10-10T18:11:15Z retry code-only__rle__r1: process failed and rle.py is missing
+2026-10-10T18:11:15Z start code-only__rle__r1 attempt 2
+2026-10-10T18:27:27Z done code-only__rle__r1 attempt 2 wall=279.2305736640046 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T18:31:05Z done tests-first__rle__r1 attempt 2 wall=537.4961602640033 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T18:31:05Z all queued jobs finished

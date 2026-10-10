@@ -18,3 +18,4 @@ daterange,code-only,1,1.0,True,14,14,107.10875161299919,4,91188,30278,52608,8302
 jsonpath,code-only,1,0.0,False,0,18,600.3057441619967,,,,,,,,True,False,False,False,2,
 jsonpath,tests-first,1,0.0,False,0,18,600.2900187640043,,,,,,,,True,False,False,False,2,
 rle,code-only,1,1.0,True,22,22,279.2305736640046,6,184314,64677,100480,19157,13407,0.10014224,False,False,False,True,2,
+rle,tests-first,1,1.0,True,22,22,537.4961602640033,7,355886,72451,242176,41259,35110,0.17460496,False,False,True,True,2,

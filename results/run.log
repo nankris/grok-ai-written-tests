@@ -77,3 +77,5 @@
 2026-10-10T18:11:15Z retry code-only__rle__r1: process failed and rle.py is missing
 2026-10-10T18:11:15Z start code-only__rle__r1 attempt 2
 2026-10-10T18:27:27Z done code-only__rle__r1 attempt 2 wall=279.2305736640046 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T18:31:05Z done tests-first__rle__r1 attempt 2 wall=537.4961602640033 rc=0 timeout=False fraction=1.0 retry=False
+2026-10-10T18:31:05Z all queued jobs finished

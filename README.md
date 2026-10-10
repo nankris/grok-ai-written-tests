@@ -4,26 +4,28 @@ On 8 Oct 2026, [The Code](https://archive.codenewsletter.ai/2108030810691629403)
 
 This repo asks a smaller, related question: on 10 original Python tasks with hidden tests, does telling **Grok 4.7** to write pytest tests first raise the hidden-test pass rate, compared with telling it to implement the solution and not write test files?
 
-Telling Grok 4.7 to write its own tests first produced a mean hidden-test fraction 0.111 lower than code-only. The bootstrap 95% CI on that paired difference (-0.33 to 0.00) includes zero. Full passes: tests-first only 0, code-only only 1, both 7, neither 1 (n_pairs=9).
+Telling Grok 4.7 to write its own tests first produced a mean hidden-test fraction 0.100 lower than code-only. The bootstrap 95% CI on that paired difference (-0.30 to 0.00) includes zero. Full passes: tests-first only 0, code-only only 1, both 8, neither 1 (n_pairs=10).
+
+> **Read this first:** all 3 failed runs were 600 s timeouts that produced no working module, not wrong answers. tests-first hit the timeout 5/10 times vs code-only 2/10, so the gap measures "solved within 10 minutes". n=10 tasks, 1 run each. See issues-found/004-coordinator-notes.md.
 
 ## Results
 
 | | tests-first | code-only |
 |---|---:|---:|
-| Runs (n) | 9 | 10 |
-| Full hidden-suite passes | 7 (77.8%) | 9 (90.0%) |
-| Wilson 95% CI, full pass | 45.3% to 93.7% | 59.6% to 98.2% |
-| Mean fraction passed | 0.778 | 0.900 |
-| Bootstrap 95% CI, mean fraction | 0.44 to 1.00 | 0.70 to 1.00 |
-| Median wall time (s) | 600.3 | 222.8 |
-| Median output tokens | 24,640 | 11,834 |
-| Median cache-read tokens | 235,712 | 77,696 |
-| Median CLI total tokens | 318,996 | 137,226 |
-| Sum of CLI-reported cost (USD) | 0.532 | 0.628 |
-| Median turns | 9.0 | 4.0 |
+| Runs (n) | 10 | 10 |
+| Full hidden-suite passes | 8 (80.0%) | 9 (90.0%) |
+| Wilson 95% CI, full pass | 49.0% to 94.3% | 59.6% to 98.2% |
+| Mean fraction passed | 0.800 | 0.900 |
+| Bootstrap 95% CI, mean fraction | 0.50 to 1.00 | 0.70 to 1.00 |
+| Median wall time (s) | 573.6 | 222.8 |
+| Median output tokens | 26,312 | 11,834 |
+| Median cache-read tokens | 242,176 | 77,696 |
+| Median CLI total tokens | 355,886 | 137,226 |
+| Sum of CLI-reported cost (USD) | 0.706 | 0.628 |
+| Median turns | 7.0 | 4.0 |
 | Timeouts | 5 | 2 |
-| Wrote a test file | 8 | 0 |
-| Ran a check command | 4 | 8 |
+| Wrote a test file | 9 | 0 |
+| Ran a check command | 5 | 8 |
 | Peeked at the repo | 0 | 0 |
 
 Mean fraction CIs are percentile bootstraps of the run-level fractions (10,000 resamples, seed 0). Full-pass CIs are Wilson intervals. Cost is the sum of `total_cost_usd` reported by the Grok CLI, including retries when a retry happened. It is the CLI's figure for these calls, not a separate price-list estimate. Token medians use the scored attempt. CLI total tokens are input + cache-read + output, as the CLI defines `total_tokens`. Output tokens include reasoning tokens. A run with no usage block is left out of the token and cost medians; the `n` inside `summary.json` for those fields says how many runs contributed.
@@ -38,6 +40,7 @@ Mean fraction CIs are percentile bootstraps of the run-level fractions (10,000 r
 | jsonpath r1 | 0.000 | 0.000 | no | no |
 | lru_ttl r1 | 0.000 | 1.000 | no | yes |
 | ratelimit r1 | 1.000 | 1.000 | yes | yes |
+| rle r1 | 1.000 | 1.000 | yes | yes |
 | roman r1 | 1.000 | 1.000 | yes | yes |
 | semver r1 | 1.000 | 1.000 | yes | yes |
 | wordwrap r1 | 1.000 | 1.000 | yes | yes |
@@ -54,11 +57,11 @@ Condition tests-first was told to write `test_solution.py`, run it, then impleme
 
 | | |
 |---|---|
-| tests-first runs | 9 |
-| runs that wrote at least one test file | 8 |
-| AST `test*` functions | 216 |
-| tests pytest collected | 920 |
-| passed on the reference solution | 912 |
+| tests-first runs | 10 |
+| runs that wrote at least one test file | 9 |
+| AST `test*` functions | 236 |
+| tests pytest collected | 1173 |
+| passed on the reference solution | 1165 |
 | failed on the reference | 8 |
 | errors on the reference | 0 |
 | false-failing (failed + errors) | 8 |
@@ -74,8 +77,9 @@ Condition tests-first was told to write `test_solution.py`, run it, then impleme
 | wordwrap | 1 | 1 | 15 | 108 | 104 | 4 |
 | daterange | 1 | 1 | 38 | 101 | 99 | 2 |
 | jsonpath | 1 | 0 | 0 | 0 | 0 | 0 |
+| rle | 1 | 1 | 20 | 253 | 253 | 0 |
 
-Code-only was told not to write test files. It wrote a test file in 0 of 10 runs. A session-log scan marked a check command (python or pytest) in 8 of 10 code-only runs and 4 of 9 tests-first runs. If the session log could not be read, that run is not counted as a check. See `summary.json` field `n_missing_session_scan`.
+Code-only was told not to write test files. It wrote a test file in 0 of 10 runs. A session-log scan marked a check command (python or pytest) in 8 of 10 code-only runs and 5 of 10 tests-first runs. If the session log could not be read, that run is not counted as a check. See `summary.json` field `n_missing_session_scan`.
 
 ## Setup
 

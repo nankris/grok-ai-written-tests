@@ -273,3 +273,25 @@ rle,code-only,1,test_hidden,test_invalid[\\],passed
 rle,code-only,1,test_hidden,test_invalid[\\1],passed
 rle,code-only,1,test_hidden,test_invalid[\\00],passed
 rle,code-only,1,test_hidden,test_invalid[\\101],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[-],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[a-a],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[aaa-a3],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[aabbbcc-a2b3c2],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[1-\\11],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[a11b-a\\12b],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[\\-\\\\1],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[\\\\-\\\\2],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[0000000000-\\010],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[aaaaaaaaaa-a10],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[\xe9\xe9\xe9-\xe93],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[9a9-\\91a\\91],passed
+rle,tests-first,1,test_hidden,test_encode_and_roundtrip[  - 2],passed
+rle,tests-first,1,test_hidden,test_non_maximal_tokens_still_decode,passed
+rle,tests-first,1,test_hidden,test_roundtrip_mixed,passed
+rle,tests-first,1,test_hidden,test_invalid[a1],passed
+rle,tests-first,1,test_hidden,test_invalid[a01],passed
+rle,tests-first,1,test_hidden,test_invalid[5],passed
+rle,tests-first,1,test_hidden,test_invalid[\\],passed
+rle,tests-first,1,test_hidden,test_invalid[\\1],passed
+rle,tests-first,1,test_hidden,test_invalid[\\00],passed
+rle,tests-first,1,test_hidden,test_invalid[\\101],passed

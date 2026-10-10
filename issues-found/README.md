@@ -7,3 +7,4 @@ Problems and limits recorded while running this experiment. Numbers come from `r
 | 001 | [001-failed-runs.md](001-failed-runs.md) | Timeouts, retries, process errors |
 | 002 | [002-measurement.md](002-measurement.md) | Peeks, code-only test files, false-failing tests |
 | 003 | [003-workflow.md](003-workflow.md) | Flags, scoring rules, what was not run |
+- [004-coordinator-notes.md](004-coordinator-notes.md): batch interruption, orphan solver on lru_ttl, all failures are 600 s timeouts, capped wall times
