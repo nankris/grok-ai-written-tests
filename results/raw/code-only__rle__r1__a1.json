@@ -1,0 +1,25 @@
+{
+  "task_id": "rle",
+  "condition": "code-only",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T18:01:14Z",
+  "finished_at": "2026-10-10T18:11:15Z",
+  "wall_seconds": 600.2704439579975,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "spec.md"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}

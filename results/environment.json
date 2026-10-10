@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-10T16:10:57Z",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "grok_version": "grok 1.0.50 (c58f321264ba)",
+  "uname": "Linux grok-bot-vm-161557313 6.12.94+ #1 SMP PREEMPT_DYNAMIC Tue Oct  6 06:02:30 UTC 2026 x86_64 GNU/Linux",
+  "grok_model_flag": "grok-4.7",
+  "timeout_s": 600,
+  "max_parallel": 2,
+  "extra_flags": [
+    "--no-subagents",
+    "--disable-web-search",
+    "--always-approve",
+    "--output-format",
+    "json"
+  ],
+  "pytest": "9.1.1",
+  "matplotlib": "3.11.2"
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "ratelimit",
+  "condition": "tests-first",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T17:17:15Z",
+  "finished_at": "2026-10-10T17:27:16Z",
+  "wall_seconds": 600.4721900270015,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "spec.md"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}

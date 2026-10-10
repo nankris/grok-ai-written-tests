@@ -1,0 +1,25 @@
+{
+  "task_id": "lru_ttl",
+  "condition": "tests-first",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T16:30:29Z",
+  "finished_at": "2026-10-10T16:48:55Z",
+  "wall_seconds": 600.3747739059982,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "spec.md"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}

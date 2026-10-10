@@ -1,0 +1,275 @@
+task_id,condition,rep,classname,name,status
+intervals,code-only,1,test_hidden,test_merge[intervals0-expected0],passed
+intervals,code-only,1,test_hidden,test_merge[intervals1-expected1],passed
+intervals,code-only,1,test_hidden,test_merge[intervals2-expected2],passed
+intervals,code-only,1,test_hidden,test_merge[intervals3-expected3],passed
+intervals,code-only,1,test_hidden,test_merge[intervals4-expected4],passed
+intervals,code-only,1,test_hidden,test_merge[intervals5-expected5],passed
+intervals,code-only,1,test_hidden,test_merge[intervals6-expected6],passed
+intervals,code-only,1,test_hidden,test_merge[intervals7-expected7],passed
+intervals,code-only,1,test_hidden,test_merge[intervals8-expected8],passed
+intervals,code-only,1,test_hidden,test_merge[intervals9-expected9],passed
+intervals,code-only,1,test_hidden,test_merge[intervals10-expected10],passed
+intervals,code-only,1,test_hidden,test_merge[intervals11-expected11],passed
+intervals,code-only,1,test_hidden,test_merge[intervals12-expected12],passed
+intervals,code-only,1,test_hidden,test_merge[intervals13-expected13],passed
+intervals,code-only,1,test_hidden,test_start_after_end_raises,passed
+intervals,code-only,1,test_hidden,test_does_not_mutate_input,passed
+intervals,tests-first,1,test_hidden,test_merge[intervals0-expected0],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals1-expected1],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals2-expected2],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals3-expected3],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals4-expected4],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals5-expected5],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals6-expected6],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals7-expected7],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals8-expected8],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals9-expected9],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals10-expected10],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals11-expected11],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals12-expected12],passed
+intervals,tests-first,1,test_hidden,test_merge[intervals13-expected13],passed
+intervals,tests-first,1,test_hidden,test_start_after_end_raises,passed
+intervals,tests-first,1,test_hidden,test_does_not_mutate_input,passed
+roman,code-only,1,test_hidden,test_canonical_values[I-1],passed
+roman,code-only,1,test_hidden,test_canonical_values[IV-4],passed
+roman,code-only,1,test_hidden,test_canonical_values[IX-9],passed
+roman,code-only,1,test_hidden,test_canonical_values[XL-40],passed
+roman,code-only,1,test_hidden,test_canonical_values[XC-90],passed
+roman,code-only,1,test_hidden,test_canonical_values[CD-400],passed
+roman,code-only,1,test_hidden,test_canonical_values[CM-900],passed
+roman,code-only,1,test_hidden,test_canonical_values[MCMXCIV-1994],passed
+roman,code-only,1,test_hidden,test_canonical_values[MMXXVI-2026],passed
+roman,code-only,1,test_hidden,test_canonical_values[MMMCMXCIX-3999],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[IIII],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[IC],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[IIX],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[IXI],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[DM],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[MMMM],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[iv],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[ III],passed
+roman,code-only,1,test_hidden,test_rejects_non_canonical[CDCD],passed
+roman,tests-first,1,test_hidden,test_canonical_values[I-1],passed
+roman,tests-first,1,test_hidden,test_canonical_values[IV-4],passed
+roman,tests-first,1,test_hidden,test_canonical_values[IX-9],passed
+roman,tests-first,1,test_hidden,test_canonical_values[XL-40],passed
+roman,tests-first,1,test_hidden,test_canonical_values[XC-90],passed
+roman,tests-first,1,test_hidden,test_canonical_values[CD-400],passed
+roman,tests-first,1,test_hidden,test_canonical_values[CM-900],passed
+roman,tests-first,1,test_hidden,test_canonical_values[MCMXCIV-1994],passed
+roman,tests-first,1,test_hidden,test_canonical_values[MMXXVI-2026],passed
+roman,tests-first,1,test_hidden,test_canonical_values[MMMCMXCIX-3999],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[IIII],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[IC],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[IIX],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[IXI],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[DM],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[MMMM],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[iv],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[ III],passed
+roman,tests-first,1,test_hidden,test_rejects_non_canonical[CDCD],passed
+lru_ttl,code-only,1,test_hidden,test_put_get_and_missing,passed
+lru_ttl,code-only,1,test_hidden,test_none_value_is_stored,passed
+lru_ttl,code-only,1,test_hidden,test_capacity_evicts_least_recently_used,passed
+lru_ttl,code-only,1,test_hidden,test_get_refreshes_recency_only,passed
+lru_ttl,code-only,1,test_hidden,test_contains_does_not_refresh_recency,passed
+lru_ttl,code-only,1,test_hidden,test_len_does_not_refresh_recency,passed
+lru_ttl,code-only,1,test_hidden,test_put_refreshes_ttl_and_exact_expiry,passed
+lru_ttl,code-only,1,test_hidden,test_expired_entry_does_not_consume_capacity,passed
+lru_ttl,code-only,1,test_hidden,test_replace_existing_does_not_evict_neighbour,passed
+lru_ttl,code-only,1,test_hidden,test_bad_constructor_args,passed
+lru_ttl,code-only,1,test_hidden,test_capacity_one_recency,passed
+lru_ttl,tests-first,1,,test_hidden,error
+csvline,code-only,1,test_hidden,"test_parse[a,b,c-expected0]",passed
+csvline,code-only,1,test_hidden,test_parse[-expected1],passed
+csvline,code-only,1,test_hidden,"test_parse[,-expected2]",passed
+csvline,code-only,1,test_hidden,"test_parse[a,-expected3]",passed
+csvline,code-only,1,test_hidden,"test_parse[a,,b-expected4]",passed
+csvline,code-only,1,test_hidden,"test_parse[a, b-expected5]",passed
+csvline,code-only,1,test_hidden,"test_parse[""a,b"",c-expected6]",passed
+csvline,code-only,1,test_hidden,"test_parse[""a""""b""-expected7]",passed
+csvline,code-only,1,test_hidden,"test_parse[a,""b""""c"",d-expected8]",passed
+csvline,code-only,1,test_hidden,"test_parse[""""-expected9]",passed
+csvline,code-only,1,test_hidden,"test_parse[""""""""-expected10]",passed
+csvline,code-only,1,test_hidden,"test_parse["",""-expected11]",passed
+csvline,code-only,1,test_hidden,"test_malformed[a,""b]",passed
+csvline,code-only,1,test_hidden,"test_malformed[a,b""c]",passed
+csvline,code-only,1,test_hidden,"test_malformed[""ab""c]",passed
+csvline,code-only,1,test_hidden,"test_malformed[""a"" ,b]",passed
+csvline,code-only,1,test_hidden,"test_malformed[""""""]",passed
+csvline,code-only,1,test_hidden,"test_malformed[a,b\n]",passed
+csvline,code-only,1,test_hidden,test_malformed[a\rb],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-1.0.1--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.2.0-1.10.0--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha-1.0.0--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha-1.0.0-alpha.1--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha.1-1.0.0-alpha.beta--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha.beta-1.0.0-beta--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-beta.2-1.0.0-beta.11--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-rc.1-1.0.0--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-1-1.0.0-a--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha.1-1.0.0-alpha-1--1],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0+build.1-1.0.0+build.2-0],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-alpha+001-1.0.0-alpha+002-0],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0+01-1.0.0-0],passed
+semver,code-only,1,test_hidden,test_precedence[1.0.0-A-1.0.0-a--1],passed
+semver,code-only,1,test_hidden,test_precedence[0.0.1-0.0.1-alpha-1],passed
+semver,code-only,1,test_hidden,test_invalid[1.0],passed
+semver,code-only,1,test_hidden,test_invalid[01.0.0],passed
+semver,code-only,1,test_hidden,test_invalid[1.0.0-01],passed
+semver,code-only,1,test_hidden,test_invalid[1.0.0-],passed
+semver,code-only,1,test_hidden,test_invalid[v1.0.0],passed
+semver,code-only,1,test_hidden,test_invalid[1.0.0-a.],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-1.0.1--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.2.0-1.10.0--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha-1.0.0--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha-1.0.0-alpha.1--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha.1-1.0.0-alpha.beta--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha.beta-1.0.0-beta--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-beta.2-1.0.0-beta.11--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-rc.1-1.0.0--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-1-1.0.0-a--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha.1-1.0.0-alpha-1--1],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0+build.1-1.0.0+build.2-0],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-alpha+001-1.0.0-alpha+002-0],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0+01-1.0.0-0],passed
+semver,tests-first,1,test_hidden,test_precedence[1.0.0-A-1.0.0-a--1],passed
+semver,tests-first,1,test_hidden,test_precedence[0.0.1-0.0.1-alpha-1],passed
+semver,tests-first,1,test_hidden,test_invalid[1.0],passed
+semver,tests-first,1,test_hidden,test_invalid[01.0.0],passed
+semver,tests-first,1,test_hidden,test_invalid[1.0.0-01],passed
+semver,tests-first,1,test_hidden,test_invalid[1.0.0-],passed
+semver,tests-first,1,test_hidden,test_invalid[v1.0.0],passed
+semver,tests-first,1,test_hidden,test_invalid[1.0.0-a.],passed
+csvline,tests-first,1,test_hidden,"test_parse[a,b,c-expected0]",passed
+csvline,tests-first,1,test_hidden,test_parse[-expected1],passed
+csvline,tests-first,1,test_hidden,"test_parse[,-expected2]",passed
+csvline,tests-first,1,test_hidden,"test_parse[a,-expected3]",passed
+csvline,tests-first,1,test_hidden,"test_parse[a,,b-expected4]",passed
+csvline,tests-first,1,test_hidden,"test_parse[a, b-expected5]",passed
+csvline,tests-first,1,test_hidden,"test_parse[""a,b"",c-expected6]",passed
+csvline,tests-first,1,test_hidden,"test_parse[""a""""b""-expected7]",passed
+csvline,tests-first,1,test_hidden,"test_parse[a,""b""""c"",d-expected8]",passed
+csvline,tests-first,1,test_hidden,"test_parse[""""-expected9]",passed
+csvline,tests-first,1,test_hidden,"test_parse[""""""""-expected10]",passed
+csvline,tests-first,1,test_hidden,"test_parse["",""-expected11]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[a,""b]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[a,b""c]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[""ab""c]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[""a"" ,b]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[""""""]",passed
+csvline,tests-first,1,test_hidden,"test_malformed[a,b\n]",passed
+csvline,tests-first,1,test_hidden,test_malformed[a\rb],passed
+ratelimit,code-only,1,test_hidden,test_allows_up_to_max_then_denies,passed
+ratelimit,code-only,1,test_hidden,test_denied_call_does_not_consume_quota,passed
+ratelimit,code-only,1,test_hidden,test_exact_boundary_ages_out,passed
+ratelimit,code-only,1,test_hidden,test_partial_slide,passed
+ratelimit,code-only,1,test_hidden,test_keys_are_independent,passed
+ratelimit,code-only,1,test_hidden,test_same_timestamp_counts_separately,passed
+ratelimit,code-only,1,test_hidden,test_bad_constructor_args,passed
+ratelimit,code-only,1,test_hidden,test_key_must_be_str,passed
+ratelimit,code-only,1,test_hidden,test_float_period_and_second_key_after_window,passed
+ratelimit,code-only,1,test_hidden,test_time_moving_backwards_raises_and_does_not_record,passed
+wordwrap,code-only,1,test_hidden,test_wrap[hello world-5-hello\nworld],passed
+wordwrap,code-only,1,test_hidden,test_wrap[a b c-5-a b c],passed
+wordwrap,code-only,1,test_hidden,test_wrap[a b c-3-a b\nc],passed
+wordwrap,code-only,1,test_hidden,test_wrap[aaaa bb c-6-aaaa\nbb c],passed
+wordwrap,code-only,1,test_hidden,test_wrap[hi world-5-hi\nworld],passed
+wordwrap,code-only,1,test_hidden,test_wrap[hello-3-hello],passed
+wordwrap,code-only,1,test_hidden,test_wrap[abcd efghij kl-4-abcd\nefghij\nkl],passed
+wordwrap,code-only,1,test_hidden,test_wrap[hi   world-20-hi world],passed
+wordwrap,code-only,1,test_hidden,test_wrap[hi\n\nworld-20-hi world],passed
+wordwrap,code-only,1,test_hidden,test_wrap[hi\tworld-20-hi world],passed
+wordwrap,code-only,1,test_hidden,test_wrap[  hello world  -11-hello world],passed
+wordwrap,code-only,1,test_hidden,test_wrap[-5-],passed
+wordwrap,code-only,1,test_hidden,test_wrap[ \n\t -5-],passed
+wordwrap,code-only,1,test_hidden,test_wrap[a b-1-a\nb],passed
+wordwrap,code-only,1,test_hidden,"test_wrap[hello, world-8-hello,\nworld]",passed
+wordwrap,code-only,1,test_hidden,test_no_trailing_newline,passed
+wordwrap,code-only,1,test_hidden,test_bad_width[0],passed
+wordwrap,code-only,1,test_hidden,test_bad_width[-1],passed
+wordwrap,code-only,1,test_hidden,test_bad_width[1.0],passed
+ratelimit,tests-first,1,test_hidden,test_allows_up_to_max_then_denies,passed
+ratelimit,tests-first,1,test_hidden,test_denied_call_does_not_consume_quota,passed
+ratelimit,tests-first,1,test_hidden,test_exact_boundary_ages_out,passed
+ratelimit,tests-first,1,test_hidden,test_partial_slide,passed
+ratelimit,tests-first,1,test_hidden,test_keys_are_independent,passed
+ratelimit,tests-first,1,test_hidden,test_same_timestamp_counts_separately,passed
+ratelimit,tests-first,1,test_hidden,test_bad_constructor_args,passed
+ratelimit,tests-first,1,test_hidden,test_key_must_be_str,passed
+ratelimit,tests-first,1,test_hidden,test_float_period_and_second_key_after_window,passed
+ratelimit,tests-first,1,test_hidden,test_time_moving_backwards_raises_and_does_not_record,passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hello world-5-hello\nworld],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[a b c-5-a b c],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[a b c-3-a b\nc],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[aaaa bb c-6-aaaa\nbb c],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hi world-5-hi\nworld],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hello-3-hello],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[abcd efghij kl-4-abcd\nefghij\nkl],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hi   world-20-hi world],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hi\n\nworld-20-hi world],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[hi\tworld-20-hi world],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[  hello world  -11-hello world],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[-5-],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[ \n\t -5-],passed
+wordwrap,tests-first,1,test_hidden,test_wrap[a b-1-a\nb],passed
+wordwrap,tests-first,1,test_hidden,"test_wrap[hello, world-8-hello,\nworld]",passed
+wordwrap,tests-first,1,test_hidden,test_no_trailing_newline,passed
+wordwrap,tests-first,1,test_hidden,test_bad_width[0],passed
+wordwrap,tests-first,1,test_hidden,test_bad_width[-1],passed
+wordwrap,tests-first,1,test_hidden,test_bad_width[1.0],passed
+daterange,tests-first,1,test_hidden,test_overlap[a0-b0-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a1-b1-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a2-b2-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a3-b3-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a4-b4-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a5-b5-True],passed
+daterange,tests-first,1,test_hidden,test_overlap[a6-b6-False],passed
+daterange,tests-first,1,test_hidden,test_overlap[a7-b7-False],passed
+daterange,tests-first,1,test_hidden,test_overlap[a8-b8-True],passed
+daterange,tests-first,1,test_hidden,test_intersection_partial,passed
+daterange,tests-first,1,test_hidden,test_intersection_touch_is_one_day,passed
+daterange,tests-first,1,test_hidden,test_intersection_none_when_disjoint,passed
+daterange,tests-first,1,test_hidden,test_reversed_range_raises,passed
+daterange,tests-first,1,test_hidden,test_rejects_datetime_and_strings,passed
+daterange,code-only,1,test_hidden,test_overlap[a0-b0-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a1-b1-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a2-b2-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a3-b3-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a4-b4-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a5-b5-True],passed
+daterange,code-only,1,test_hidden,test_overlap[a6-b6-False],passed
+daterange,code-only,1,test_hidden,test_overlap[a7-b7-False],passed
+daterange,code-only,1,test_hidden,test_overlap[a8-b8-True],passed
+daterange,code-only,1,test_hidden,test_intersection_partial,passed
+daterange,code-only,1,test_hidden,test_intersection_touch_is_one_day,passed
+daterange,code-only,1,test_hidden,test_intersection_none_when_disjoint,passed
+daterange,code-only,1,test_hidden,test_reversed_range_raises,passed
+daterange,code-only,1,test_hidden,test_rejects_datetime_and_strings,passed
+jsonpath,code-only,1,,test_hidden,error
+jsonpath,tests-first,1,,test_hidden,error
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[-],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[a-a],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[aaa-a3],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[aabbbcc-a2b3c2],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[1-\\11],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[a11b-a\\12b],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[\\-\\\\1],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[\\\\-\\\\2],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[0000000000-\\010],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[aaaaaaaaaa-a10],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[\xe9\xe9\xe9-\xe93],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[9a9-\\91a\\91],passed
+rle,code-only,1,test_hidden,test_encode_and_roundtrip[  - 2],passed
+rle,code-only,1,test_hidden,test_non_maximal_tokens_still_decode,passed
+rle,code-only,1,test_hidden,test_roundtrip_mixed,passed
+rle,code-only,1,test_hidden,test_invalid[a1],passed
+rle,code-only,1,test_hidden,test_invalid[a01],passed
+rle,code-only,1,test_hidden,test_invalid[5],passed
+rle,code-only,1,test_hidden,test_invalid[\\],passed
+rle,code-only,1,test_hidden,test_invalid[\\1],passed
+rle,code-only,1,test_hidden,test_invalid[\\00],passed
+rle,code-only,1,test_hidden,test_invalid[\\101],passed

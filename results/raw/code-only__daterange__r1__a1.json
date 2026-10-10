@@ -1,0 +1,71 @@
+{
+  "task_id": "daterange",
+  "condition": "code-only",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T17:39:26Z",
+  "finished_at": "2026-10-10T17:41:13Z",
+  "wall_seconds": 107.10875161299919,
+  "returncode": 0,
+  "timed_out": false,
+  "error": null,
+  "usage": {
+    "input_tokens": 30278,
+    "output_tokens": 8302,
+    "reasoning_tokens": 5596,
+    "cache_read_input_tokens": 52608,
+    "cache_creation_input_tokens": 0,
+    "total_tokens": 91188,
+    "num_turns": 4,
+    "total_cost_usd": 0.04646848,
+    "session_id": "01a126e5-f409-7292-b8df-35400933fc61",
+    "model_usage_keys": [
+      "grok-4.7-build"
+    ],
+    "stop_reason": "end_turn"
+  },
+  "stderr": "",
+  "parsed": {
+    "text": "I'll read `spec.md` and implement inclusive calendar-date overlap in `daterange.py` using only the Python standard library.The spec treats ranges as inclusive calendar days and rejects `datetime` values because they subclass `date`. I'll implement both functions with that shared validation.`daterange.py` implements inclusive calendar-date overlap with `ranges_overlap` and `intersection`.\n\nBoth functions accept only real `datetime.date` values. A `datetime.datetime` (including a subclass) or any other type raises `TypeError`. If either range has `start > end`, they raise `ValueError`. A single-day range, where the start equals the end, is valid.\n\nTwo ranges overlap when they share any day, including an endpoint. The overlap runs from the later start through the earlier end. `intersection` returns that pair, or `None` when the ranges do not meet. The day after a range ends does not count as an overlap.",
+    "stopReason": "end_turn",
+    "sessionId": "01a126e5-f409-7292-b8df-35400933fc61",
+    "requestId": "4d7e514a-c905-433a-838a-58108811009c",
+    "thought": "I will create `daterange.py` with the two requested functions using only Python 3.13 standard library.I will implement `daterange.py` with the `ranges_overlap` and `intersection` functions.\n\nValidation will require `datetime.date` instances and reject `datetime.datetime`. It will raise `TypeError` for invalid types and `ValueError` when start exceeds end. Single-day ranges are valid. Overlap includes endpoint meetings but excludes the day after a range ends.\n\nThe overlap check uses `a_start <= b_end` and `b_start <= a_end`. The intersection returns `(max(starts), min(ends))` when valid, otherwise `None`. A helper will enforce the `datetime.date` type.\n\nValidation will run on all four arguments first, then check each range for start greater than end. TypeError takes precedence over ValueError.\n\nError messages will include parameter names for clarity. Date comparisons are straightforward.\n\nThe validation will use `isinstance(value, datetime.date) and not isinstance(value, datetime.datetime)`. This rejects `datetime` specifically while allowing other date subclasses. The spec wording supports this interpretation.\n\nI will write the file and verify it with an inline Python command in the current directory. I will not create any test files.\n\nError messages will include \"datetime.date\" for TypeError and parameter names for ValueError. Both ranges will be validated even if overlap could be determined earlier.\n\nThe overlap and intersection functions will share the same validation and predicate logic to guarantee consistency. If both ranges are inverted, the first invalid range is reported before the second.\n\nBrief docstrings matching the spec will be added. The inline verification script will run via `python -c` without creating files.\n\ndatetime subclasses are also rejected. The explicit isinstance check prevents datetime objects from passing validation and being compared.\n\nThe TypeError message will use a concise type name rather than a fully qualified module path. The ValueError will reference the specific parameter names, such as \"a_start must be on or before a_end\". No `from __future__ import annotations` is needed because Python 3.13 supports PEP 604 union syntax natively.\n\nThe intersection will return a plain tuple of two dates, including identical dates when the ranges meet at a single day. I am ready to write the file.\n\nThe validation helper will accept parameter names and ISO date strings in its error message. This makes it clear which range has an inverted start and end.Running a verification script to test the implementation.The implementation is complete and passes all tests.",
+    "usage": {
+      "input_tokens": 30278,
+      "cache_read_input_tokens": 52608,
+      "cache_creation_input_tokens": 0,
+      "output_tokens": 8302,
+      "reasoning_tokens": 5596,
+      "total_tokens": 91188
+    },
+    "num_turns": 4,
+    "total_cost_usd": 0.04646848,
+    "total_cost_usd_ticks": 464684800,
+    "modelUsage": {
+      "grok-4.7-build": {
+        "inputTokens": 30278,
+        "outputTokens": 8302,
+        "cacheReadInputTokens": 52608,
+        "cacheCreationInputTokens": 0,
+        "modelCalls": 4,
+        "costUSD": 0.04646848
+      }
+    }
+  },
+  "files": [
+    "daterange.py",
+    "spec.md"
+  ],
+  "session_scan": {
+    "found": true,
+    "n_update_lines": 18,
+    "commands": [
+      "python3 -c \"\nimport datetime\nfrom datetime import date, datetime as dt\nfrom daterange import ranges_overlap, intersection\n\nd = date\n\n# identical\nassert ranges_overlap(d(2020,1,1), d(2020,1,10), d(2020,1,1), d(2020,1,10))\nassert intersection(d(2020,1,1), d(2020,1,10), d(2020,1,1), d(2020,1,10)) == (d(2020,1,1), d(2020,1,10))\n\n# contained\nassert ranges_overlap(d(2020,1,1), d(2020,1,31), d(2020,1,10), d(2020,1,12))\nassert intersection(d(2020,1,1), d(2020,1,31), d(2020,1,10), d(2020,1,12)) == (d(2020,1,10), d(2020,1,12))\n\n# partial\nassert intersection(d(2020,1,1), d(2020,1,15), d(2020,1,10), d(2020,1,20)) == (d(2020,1,10), d(2020,1,15))\n\n# endpoint touch\nassert ranges_overlap(d(2020,1,1), d(2020,1,10), d(2020,1,10), d(2020,1,20))\nassert intersection(d(2020,1,1), d(2020,1,10), d(2020,1,10), d(2"
+    ],
+    "paths": [
+      "/tmp/ai-written-tests-work/code-only/daterange-r1/spec.md",
+      "/tmp/ai-written-tests-work/code-only/daterange-r1/daterange.py"
+    ]
+  }
+}

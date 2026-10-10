@@ -1,0 +1,27 @@
+{
+  "task_id": "wordwrap",
+  "condition": "tests-first",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T17:29:25Z",
+  "finished_at": "2026-10-10T17:39:26Z",
+  "wall_seconds": 600.3047641049998,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "spec.md",
+    "test_solution.py",
+    "wrap.py"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}

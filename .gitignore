@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# blog draft, not part of the public repo
+post-outline.md
+
+# large model artifacts, if any land here
+*.gguf
+*.pt
+*.bin
+*.onnx
+
+# scratch copies of /tmp work
+/tmp/

@@ -1,0 +1,27 @@
+{
+  "task_id": "csvline",
+  "condition": "tests-first",
+  "rep": 1,
+  "attempt": 2,
+  "started_at": "2026-10-10T17:08:56Z",
+  "finished_at": "2026-10-10T17:18:56Z",
+  "wall_seconds": 600.297621194004,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "csvline.py",
+    "spec.md",
+    "test_solution.py"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}

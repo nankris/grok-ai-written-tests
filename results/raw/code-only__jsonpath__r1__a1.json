@@ -1,0 +1,25 @@
+{
+  "task_id": "jsonpath",
+  "condition": "code-only",
+  "rep": 1,
+  "attempt": 1,
+  "started_at": "2026-10-10T17:40:33Z",
+  "finished_at": "2026-10-10T17:50:34Z",
+  "wall_seconds": 600.4954212499943,
+  "returncode": 143,
+  "timed_out": true,
+  "error": null,
+  "usage": {},
+  "stderr": "",
+  "parsed": null,
+  "files": [
+    "spec.md"
+  ],
+  "session_scan": {
+    "found": false,
+    "n_update_lines": null,
+    "commands": [],
+    "paths": []
+  },
+  "stdout_excerpt": ""
+}
